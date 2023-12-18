@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Add your styles here */
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Sections</button>
+        <div id="myDropdown" class="dropdown-content">
+            <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+            <a href="#" value="
+            1. Short title, extent and commencement.—(1) This Act may be called the Federal Excise Act, 2005, 
+            2. It extends to the whole of Pakistan 
+            3. It shall come into force on 1st day of July, 2005. 
+            " onclick="selectSection(event)">section 1</a>
+			<a href="#" value="
+            1. Short title, extent and commencement.—(1) This Act may be called the Federal Excise Act, 2005, 
+            2. It extends to the whole of Pakistan 
+            3. It shall come into force on 1st day of July, 2005. 
+            " onclick="selectSection(event)">section 2</a>
+			<a href="#" value="
+            1. Short title, extent and commencement.—(1) This Act may be called the Federal Excise Act, 2005, 
+            2. It extends to the whole of Pakistan 
+            3. It shall come into force on 1st day of July, 2005. 
+            " onclick="selectSection(event)">section 3</a>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var dropdown = document.getElementById("myDropdown");
+            dropdown.classList.toggle("show");
+        }
+
+        function selectSection(event) {
+            var dropdown = document.getElementById("myDropdown");
+            dropdown.classList.remove("show");
+            event.stopPropagation(); // Prevent the click event from bubbling up to the document
+        }
+
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

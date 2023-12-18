@@ -1,0 +1,127 @@
+.slideshow-container {
+  position: fixed;
+  height: 90%;
+  border: 1px solid black;
+  width: 600px;
+  margin-left: 1% ;
+  margin-top: 2%;
+  overflow: auto;
+  padding-bottom: 0;
+}
+a[href="javascript:void(0);"]{
+  text-decoration: none;
+  color: black;
+}
+.content_bar{
+  width: 20%;
+  box-shadow: 10px 10px 10px black;
+  border: 1px solid white;
+}
+/* Style the vertical scrollbar */
+::-webkit-scrollbar {
+  width: 10px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(169,207,241);
+  background: radial-gradient(circle, #c2905a 54%, #8f6539 99%);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(169,207,241);
+  background: radial-gradient(circle, #3f2203 54%, #df790c 99%);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(169,207,241);
+  background: radial-gradient(circle, #ff8400 54%, #ff911c 99%);
+}
+
+.content_list{
+  border-collapse: collapse;
+background-color: #b1afaf;
+
+}
+.prev-btn:hover, .next-btn:hover {
+  background: rgb(169,207,241);
+  background: radial-gradient(circle, #dda161 54%, #f89c3a 99%);
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #fcfafa;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 11%;
+  left: 2%;
+  border-radius: 10%;
+  background-color: black;
+  border: 1px solid black;
+  position: fixed;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mySlides {
+  min-width: 100%;
+  box-sizing: border-box;
+  margin-right:5%;
+
+}
+
+
+
+.slider-btn {
+ 
+  transform: translateY(-50%);
+  cursor: pointer;
+  
+  cursor: pointer;
+  position: fixed;
+
+  padding-top: 16px;
+  
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev-btn {
+  left: 12%;
+}
+
+.next-btn {
+left: 40%;
+}

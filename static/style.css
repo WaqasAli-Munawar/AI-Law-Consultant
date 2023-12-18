@@ -1,0 +1,316 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    /* background-color: #ccc; */
+    background: rgb(169,207,241);
+background: radial-gradient(circle, #ffc78b 54%, #ffb05c 99%);
+    margin: 0;
+    padding: 0;
+    box-shadow: 2px 2px 20px black;
+}
+
+p {
+    border: 20px solid transparent;
+    border-image: url('image.jpg') 30 round;
+    padding: 2%;
+}
+
+.pagenum {
+    color: black; /* Set text color to black */
+    text-align: center; /* Center-align text */
+    padding-top: 1%; /* Add 1% padding on top */
+    padding-bottom: 1%; /* Add 1% padding on bottom */
+    width: 100%; /* Set width to 100% */
+}
+
+#section_area {
+    width: 20%; /* Set width to 28% */
+    height: 35%; /* Set height to 33% */
+    overflow: auto; /* Enable vertical overflow scrolling if needed */
+    position: fixed; /* Fix element's position */
+    top: 36%; /* Set 50 pixels distance from the top */
+    left: 54%; /* Set 1% distance from the right */
+    border-radius: 2%; /* Add 2% border radius (rounded corners) */
+    border: 5px groove rgb(250, 221, 221);
+    background: rgb(169,207,241);
+    background: radial-gradient(circle, #ffdcb7 54%, #f8ba77 99%);
+    box-shadow: 10px 10px 50px black;
+    
+margin-top: 5px;
+padding: 1%;
+}
+
+
+/* dropdown  start---------------- */
+:root {
+    --main-bg-color: #f5f5f5; /* Light grey background */
+    
+    --main-text-color: #f8efef; /* Dark grey text */
+    --accent-color: #6b6969; /* Black */
+    --border-color: #978c81;
+  }
+  
+  .dropbtn {
+    color: white;
+   
+    background: radial-gradient(circle, #c59058 54%,  #7c674f 99%);
+    font-size: 16px;
+    border-radius: 30%;
+    margin-left: -50%;
+    margin-top: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 8px 8px 10px black;
+  outline: none;
+    
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background: rgb(169,207,241);
+    background: radial-gradient(circle, #fca345 54%, #6e4c27 99%);
+  }
+  
+  #myInput {
+    box-sizing: border-box;
+    background-image: url('searchicon.png');
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    background: rgb(169,207,241);
+    background: radial-gradient(circle, #fcd6ad 54%, #c78844 99%);
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  #myInput:focus {
+    outline: 3px solid var(--border-color);
+    background: rgb(169,207,241);
+    background: radial-gradient(circle, #ffc78b 54%, #ffb05c 99%);
+  }
+  
+  .dropdown {
+    position: fixed;
+    right: 2%;
+    width: 30%;
+    top: 2%;
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    top: 100%;
+    left: -50%;
+    display: none;
+    overflow: scroll;
+    height: 200px;
+    position: absolute;
+    background: rgb(169,207,241);
+    background: radial-gradient(circle, #ebc195 54%, #ffa545 99%);
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid var(--border-color);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {
+    background: rgb(169,207,241);
+    background: radial-gradient(circle, #b98f62 54%, #b47a3c 99%);
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .other_table, th, tr, td {
+    border: 3px solid white;
+    
+    border-collapse: collapse;
+    padding: 10px;
+    background: rgb(169,207,241);
+    background: radial-gradient(circle, #ffc78b 54%, #ffb05c 99%);
+    color: var(--main-text-color);
+    background-color: transparent;
+  }
+  
+/* page num start */
+/* Style the hr element */
+/* Define colors */
+:root {
+    --main-bg-color: #f5f5f5; /* Light grey background */
+    --main-text-color: #333333; /* Dark grey text */
+    --accent-color: #1f1f1f; /* Black */
+  }
+  
+  /* Style the horizontal rule */
+  hr {
+    border: none;
+    height: 2px;
+    background-color: var(--accent-color); /* Dark grey */
+    margin: 10px 0;
+  }
+  
+  /* Style the page number container */
+  .pagenum {
+    display: block;
+    text-align: center;
+    /* margin: 10px 0; */
+    font-size: 18px; 
+    
+  }
+  
+  /* Style the page number itself */
+  .pagenum b {
+    font-weight: bold;
+    color: var(--main-text-color); /* Dark grey */
+  }
+  
+  /* Main container style */
+  .main {
+    width: 20%;
+    margin-left: 2%;
+    padding: 10%;
+    border: 10px solid transparent;
+    
+    box-shadow: 2px 2px 20px var(--main-text-color); /* Dark grey shadow */
+    background-color: var(--main-bg-color); /* Light grey background */
+  }
+  
+  /* Superscript style */
+  sup {
+    color: red; /* Black */
+  }
+  
+  /* Tooltip style */
+  [data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    background-color: var(--accent-color); /* Dark grey */
+    color: white; /* Dark grey */
+    border: 1px solid var(--main-text-color); /* Dark grey border */
+    padding: 5px;
+    font-weight: 400;
+    border-radius: 5px;
+    font-size: 15px;
+    position: absolute;
+    z-index: 999;
+    width: 30%;
+  }
+  
+  /* Style for h1 */
+  h1 {
+    text-align: center;
+    /* color: var(--main-text-color); Dark grey */
+    padding: 20px;
+    /* background-color: var(--main-bg-color); Light grey background */
+    margin: 0;
+  }
+  
+
+/* chat bot start */
+
+
+#chat-container {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column; /* Display messages in a column layout */
+  align-items: flex-end; /* Right-align the chat container */
+  z-index: 15000;
+}
+
+#chat-box {
+  background: radial-gradient(circle, #f7c085 54%, #db8d39 99%);
+  box-shadow: 10px 10px 10px black;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user, .chatbot {
+  background-color: #e6f7ff;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 5px 0;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.user {
+  align-self: flex-end; /* Right-align user's messages */
+}
+
+#user-input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+#send {
+  width: 20%;
+  padding: 10px;
+  background: radial-gradient(circle, #c56e10 54%, #41270c 99%);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+#send:hover {
+  background-color: #0056b3;
+}
+
+.user img, .chatbot img {
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+/* Style for the chatbot widget button */
+.widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+#open-chatbot {
+  background: radial-gradient(circle, #cc8d49 54%,  #473a2b 99%);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px black;
+  outline: none;
+}
+
+#open-chatbot:hover {
+  background-color: #ee1916;
+}
+
+/* chat bot end */
+
